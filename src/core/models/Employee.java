@@ -2,7 +2,7 @@ package core.models;
 
 import java.util.Date;
 
-public class Employee {
+public class Employee implements Person{
     private int id;
     private String firstName;
     private String middleName;
@@ -10,6 +10,7 @@ public class Employee {
     private Date registered;
     private Date updated;
 
+    @Override
     public int getId() {
         return id;
     }
@@ -18,6 +19,7 @@ public class Employee {
         this.id = id;
     }
 
+    @Override
     public String getFirstName() {
         return firstName;
     }
@@ -26,6 +28,7 @@ public class Employee {
         this.firstName = firstName;
     }
 
+    @Override
     public String getMiddleName() {
         return middleName;
     }
@@ -34,6 +37,7 @@ public class Employee {
         this.middleName = middleName;
     }
 
+    @Override
     public String getLastName() {
         return lastName;
     }

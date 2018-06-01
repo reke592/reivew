@@ -4,5 +4,7 @@ public enum EquipmentStatus {
     NEW,
     OLD,
     OBSOLETE,
-    OUT_OF_ORDER
+    OUT_OF_ORDER,
+    EXPIRED,
+    NA
 }
